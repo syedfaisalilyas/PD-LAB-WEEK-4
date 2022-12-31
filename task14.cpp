@@ -2,6 +2,8 @@
 using namespace std;
 void uams();
 void CompareAggregates(float,float,string,string);
+void CalculateAggregate(int,float,float,float,int,int,int,float,float,float,int,int,int);
+
 
 main()
 {
@@ -54,20 +56,14 @@ main()
       }
       if (choice == 3)
       {  cout<<"You choosed: 3"<<endl;
-         g_total1= (30*matric1)/100 + (30*inter1)/100 + (40*ecat1)/100;
-         r_total1= (30*1100)/100 + (30*550)/100 + (40*400)/100; 
-         aggregate1 = (g_total1/r_total1)*100;
-         cout<<aggregate1<<endl;
+         CalculateAggregate(choice,g_total1,r_total1,aggregate1,matric1,inter1,ecat1,g_total2,r_total2,aggregate2,matric2,inter2,ecat2);
          cout << "Press any key to continue....!";
          cin>>key;
    
       }
       if (choice == 4)
       {  cout<<"You choosed: 4"<<endl;
-         g_total2= (30*matric2)/100 + (30*inter2)/100 + (40*ecat2)/100;
-         r_total2= (30*1100)/100 + (30*550)/100 + (40*400)/100;
-         aggregate2 = (g_total2/r_total2)*100;
-         cout<<aggregate2<<endl;
+         CalculateAggregate(choice,g_total1,r_total1,aggregate1,matric1,inter1,ecat1,g_total2,r_total2,aggregate2,matric2,inter2,ecat2);
          cout << "Press any key to continue....!";
          cin>>key;
       }
@@ -85,6 +81,28 @@ main()
    }
 }
 
+
+
+void CalculateAggregate(int choice,float g_total1,float r_total1,float aggregate1,int matric1,int inter1,int ecat1,float g_total2,float r_total2,float aggregate2,int matric2,int inter2,int ecat2)
+{ 
+   if(choice == 3)
+   {
+         g_total1= (30*matric1)/100 + (30*inter1)/100 + (40*ecat1)/100;
+         r_total1= (30*1100)/100 + (30*550)/100 + (40*400)/100; 
+         aggregate1 = (g_total1/r_total1)*100;
+         cout<<aggregate1<<endl;
+    }
+   if(choice == 4)
+   {
+         g_total2= (30*matric2)/100 + (30*inter2)/100 + (40*ecat2)/100;
+         r_total2= (30*1100)/100 + (30*550)/100 + (40*400)/100;
+         aggregate2 = (g_total2/r_total2)*100;
+         cout<<aggregate2<<endl;
+    }
+}
+
+
+
 void uams()
 {
    cout << "****************" << endl;
@@ -101,6 +119,7 @@ void uams()
    cout << "Press 4 to calculate the aggregate of second student!" << endl;
    cout << "Press 5 to display the student with roll number 01!" << endl;
 }
+
 
 
 void CompareAggregates(float aggregate1,float aggregate2,string name1,string name2) 
