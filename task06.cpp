@@ -11,7 +11,7 @@ void L(int,int);
 
 main(){ 
   system("cls");
-  int x=80,y=5;
+  int x=50,y=5;
   gotoxy(x,y);
   F(x,y);
   A1(x,y);
@@ -30,87 +30,91 @@ void gotoxy(int x,int y)
 }
 
 void F(int x,int y){
-gotoxy(x,y);
-cout<<"      "<<endl;
-gotoxy(x,y);
-cout<<"######"<<endl;
 gotoxy(x,y+1);
-cout<<"#"<<endl;
+cout<<"      "<<endl;
 gotoxy(x,y+2);
-cout<<"####"<<endl;
+cout<<"######"<<endl;
 gotoxy(x,y+3);
 cout<<"#"<<endl;
 gotoxy(x,y+4);
+cout<<"####"<<endl;
+gotoxy(x,y+5);
+cout<<"#"<<endl;
+gotoxy(x,y+6);
 cout<<"#"<<endl;
 }
 
 void A1(int x,int y){
-cout<<"      "<<endl;
-gotoxy(x,y+5);
-cout<<" #####"<<endl;
-gotoxy(x,y+6);
-cout<<"#     #           "<<endl;
 gotoxy(x,y+7);
-cout<<"#######   "<<endl;
+cout<<"      "<<endl;
 gotoxy(x,y+8);
-cout<<"#     #"<<endl;
+cout<<" #####"<<endl;
 gotoxy(x,y+9);
+cout<<"#     #           "<<endl;
+gotoxy(x,y+10);
+cout<<"#######   "<<endl;
+gotoxy(x,y+11);
+cout<<"#     #"<<endl;
+gotoxy(x,y+12);
 cout<<"#     # "<<endl;
 }
 
 void I(int x,int y){
 cout<<"      "<<endl;
-gotoxy(x,y+10);
-cout<<"#######"<<endl;
-gotoxy(x,y+11);
-cout<<"   #"<<endl;
-gotoxy(x,y+12);
-cout<<"   #"<<endl;
 gotoxy(x,y+13);
-cout<<"   #"<<endl;
+cout<<"#######"<<endl;
 gotoxy(x,y+14);
+cout<<"   #"<<endl;
+gotoxy(x,y+15);
+cout<<"   #"<<endl;
+gotoxy(x,y+16);
+cout<<"   #"<<endl;
+gotoxy(x,y+17);
 cout<<"#######"<<endl;
 }
 
 void S(int x,int y){
-cout<<"      "<<endl;
-gotoxy(x,y+15);
-cout<<"  ####"<<endl;
-gotoxy(x,y+16);
-cout<<"#     "<<endl;
-gotoxy(x,y+17);
-cout<<" ### "<<endl;
 gotoxy(x,y+18);
-cout<<"    #    "<<endl;
+cout<<"      "<<endl;
 gotoxy(x,y+19);
+cout<<"  ####"<<endl;
+gotoxy(x,y+20);
+cout<<"#     "<<endl;
+gotoxy(x,y+21);
+cout<<" ### "<<endl;
+gotoxy(x,y+22);
+cout<<"    #    "<<endl;
+gotoxy(x,y+23);
 cout<<"####  "<<endl;
 }
 
 
 void A2(int x,int y){
-cout<<"      "<<endl;
-gotoxy(x,y+20);
-cout<<" #####"<<endl;
-gotoxy(x,y+21);
-cout<<"#     #           "<<endl;
-gotoxy(x,y+22);
-cout<<"#######   "<<endl;
-gotoxy(x,y+23);
-cout<<"#     #"<<endl;
 gotoxy(x,y+24);
+cout<<"      "<<endl;
+gotoxy(x,y+25);
+cout<<" #####"<<endl;
+gotoxy(x,y+26);
+cout<<"#     #           "<<endl;
+gotoxy(x,y+27);
+cout<<"#######   "<<endl;
+gotoxy(x,y+28);
+cout<<"#     #"<<endl;
+gotoxy(x,y+29);
 cout<<"#     # "<<endl;
 }
 
 void L(int x,int y){
+gotoxy(x,y+30);
 cout<<"      "<<endl;
-gotoxy(x,y+25);
+gotoxy(x,y+31);
 cout<<"#"<<endl;
-gotoxy(x,y+26);
+gotoxy(x,y+32);
 cout<<"#"<<endl;
-gotoxy(x,y+27);
+gotoxy(x,y+33);
 cout<<"#"<<endl;
-gotoxy(x,y+28);
+gotoxy(x,y+34);
 cout<<"#"<<endl;
-gotoxy(x,y+29);
+gotoxy(x,y+35);
 cout<<"######"<<endl;
 }
